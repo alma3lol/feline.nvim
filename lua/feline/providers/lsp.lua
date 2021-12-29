@@ -3,7 +3,7 @@ local M = {}
 local lsp = vim.lsp
 local diagnostic = vim.diagnostic
 
-local severity_names = { 'Error', 'Warning', 'Information', 'Hint' }
+local severity_names = { 'Error', 'Warn', 'Info', 'Hint' }
 
 function M.is_lsp_attached()
     return next(lsp.buf_get_clients(0)) ~= nil
